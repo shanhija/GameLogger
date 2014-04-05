@@ -1,0 +1,97 @@
+!!!!!!!!!!!!!!!!!!!!!!!
+! GameLogger Settings !
+!!!!!!!!!!!!!!!!!!!!!!!
+! 
+! Syntax: 
+!	Lines starting with ! are interpcomments
+!	Lines starting with # are general settings
+!	Lines starting with a number are interpreted games
+!	Empty lines are ignored
+!
+!
+! Versions:
+!	v1.4	Massakuuri 2013
+!	v1.3	EpicMegaLan 2012
+!	v1.2	Nautinto 2011
+!	v1.1	Nautinto 2010
+!	v1.0	Nolife 2009
+
+! Server settings:
+#	mysqlAddress	db1.kapsi.fi
+#	mysqlUser	shanhija
+#	mysqlPassword	eps56hip
+#	mysqlTablePrefix	gl
+
+! Client settings:
+! APM buffer size has to be a factor of 60!
+#	apmBufferSize	5
+#	serverURL	http://koti.kapsi.fi/~shanhija/glogger
+! #	suppressUpdates
+
+! Games
+!
+!"Game ID"	"Executable filename"	"Long name for game" "Icon URL"
+1	AIWar.exe	AI War Fleet Command	http://media.steampowered.com/steamcommunity/public/images/apps/40400/3d1a5da5e4e486d2764e3f714f89bf02c6267aa3.jpg
+2	KillingFloor.exe	Killing Floor	http://media.steampowered.com/steamcommunity/public/images/apps/1250/354c07a75cc16f6bf551b81d27f4eee3436fc2fb.jpg
+3	Civilization4.exe	Civilization 4	http://media.steampowered.com/steamcommunity/public/images/apps/3900/e70f5d6e71dd9e3541163d6324ceb7c283345f03.jpg
+4	fm.exe	Football Manager 2013	https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash4/211170_434562863256134_1951988200_n.jpg
+5	kb.exe	King's Bounty: Armored Princess	http://media.steampowered.com/steamcommunity/public/images/apps/3170/3b8405b798d2c22391d1b3a6fadc9a71231b549f.jpg
+6	conviction_game.exe	Tom Clancy's Splinter Cell: Conviction	http://media.steampowered.com/steamcommunity/public/images/apps/33220/6939f9914923cad9934603432b43fe7d46d47dd7.jpg
+7	Tropico4.exe	Tropico 4	https://photos-a.xx.fbcdn.net/hphotos-frc1/316845_268206256545792_1176555918_a.jpg
+8	R6Vegas2_Game.exe	Rainbow Six Vegas 2	http://cdn.steampowered.com/v/gfx/apps/15120/capsule_sm_120.jpg
+9	Wow.exe	World of Warcraft	http://cultavix.files.wordpress.com/2008/07/index-world-of-warcraft-logo.jpg
+10	left4dead2.exe	Left 4 Dead 2	http://cdn.steampowered.com/v/gfx/apps/550/capsule_sm_120.jpg
+11	s3.exe	Settlers 3	http://juegosabiertos.com/abandonware/imagenes/portadas/settlers3.jpg
+12	witcher.exe	The Witcher: Enhanced Edition	http://cdn.steampowered.com/v/gfx/apps/20900/capsule_sm_120.jpg
+13	DungeonSiege2.exe	Dungeon Siege 2	http://www.game-ost.ru/covers/1169_610500.jpg
+14	Terraria.exe	Terraria	http://media.steampowered.com/steamcommunity/public/images/apps/105600/e3f375e78ada9d2ec7ffa521fe1b0052d1d2bbb5.jpg
+15	FrozenSynapse.exe	Frozen Synapse	http://media.steampowered.com/steamcommunity/public/images/apps/98200/3b20447980b019783a4e37893660d1ce54893699.jpg
+16	RelicCOH.exe	Company of Heroes	http://media.steampowered.com/steamcommunity/public/images/apps/4560/e12e8695c6766b47a089351dd9c4531e669c2a7b.jpg
+17	Reuben.exe	HOARD	http://media.steampowered.com/steamcommunity/public/images/apps/63000/5f25e8a8b1e498bdc33efdb4ea35a44b09ffe844.jpg
+18	WorldOfTanks.exe	World of Tanks	http://worldoftanks.eu/dcont/gskins_installed/WoT_8_6/img/logo.png
+19	Magicka.exe	Magicka	http://media.steampowered.com/steamcommunity/public/images/apps/42910/8c59c674ef40f59c3bafde8ff0d59b7994c66477.jpg
+20	mow.exe	Men of War	http://media.steampowered.com/steamcommunity/public/images/apps/7830/b34d63eb274c8fe1e343e67d54e6d929dcad4afb.jpg
+21	mow_assault_squad.exe	Men of War: Assault Squad	http://media.steampowered.com/steamcommunity/public/images/apps/64000/7e041d717dbcb7f9805955e1410d983e1415d009.jpg
+22	redtide.exe	Men of War: Red Tide	http://media.steampowered.com/steamcommunity/public/images/apps/3130/605aa0d079aac9841e2ddf8fb201404f02efc6be.jpg
+23	CivilizationV_DX11.exe	Sid Meier's Civilization V	http://media.steampowered.com/steamcommunity/public/images/apps/8930/2203f62bd1bdc75c286c13534e50f22e3bd5bb58.jpg
+24	Settlers7R.exe	The Settlers 7: Paths to a Kingdom	http://media.steampowered.com/steamcommunity/public/images/apps/48210/1b5784e85c75d53bc3b8008b1cc4f3ce60cae9d2.jpg
+25	swarm.exe	Alien Swarm	http://media.steampowered.com/steamcommunity/public/images/apps/630/de3320a2c29b55b6f21d142dee26d9b044a29e97.jpg
+26	Oblivion.exe	Elder Scrolls IV: Oblivion	http://media.steampowered.com/steamcommunity/public/images/apps/22330/531dd052b9816ce1484a2c4b46a4f271963c527f.jpg
+27	TmForever.exe	Trackmania United	http://media.steampowered.com/steamcommunity/public/images/apps/7200/cf92499b932c2ff6483378586432052187cf3ccc.jpg
+28	exefile.exe	Eve Online	http://pozniak.pl/wp/wp-content/uploads/2011/03/eve-online-icon.png
+29	Game.exe	Gray Matter	http://fc06.deviantart.net/fs70/f/2011/052/b/5/gray_matter___cover_icon_by_gimilkhor-d3a1yej.png
+30	Majesty2.exe	Majesty 2	http://img.brothersoft.com/icon/softimage/m/majesty_2-440839-1295846229.jpeg
+31	UnrealTournament.exe	Unreal Tournament	http://icons.iconarchive.com/icons/3xhumed/mega-games-pack-39/256/Unreal-Tournament-III-logo-1-icon.png
+32	Dungeon Siege III.exe	Dungeon Siege 3	http://i.geeksailor.com/wp-content/uploads/2011/06/dungeon-siege-iii530.jpg
+33	CivilizationV.exe	Civilization 5	http://cdn.steampowered.com/v/gfx/apps/8930/header_292x136.jpg?t=1340342123
+34	CivilizationV_DX11.exe	Civilization 5	http://cdn.steampowered.com/v/gfx/apps/8930/header_292x136.jpg?t=1340342123
+35	EYE.exe	E.Y.E: Divine Cybermancy	http://cdn.steampowered.com/v/gfx/apps/91700/header_292x136.jpg?t=1324336487
+36	grimrock.exe	Legend of Grimrock	http://cdn.steampowered.com/v/gfx/apps/207170/header_292x136.jpg?t=1339715827
+37	saintsrowthethird_dx11.exe	Saints Row: The Third	http://pcgameswallpapers.com/wp-content/uploads/2013/03/Saints-Row-The-Third-Wallpaper-1920x1080-180x180.jpg
+38	BB_LE.exe	Blood Bowl® Legendary Edition	http://cdn.steampowered.com/v/gfx/apps/58520/header_292x136.jpg?t=1322612472
+39	DOW2.exe	Warhammer 40,000: Dawn of War II: Retribution	http://cdn.steampowered.com/v/gfx/apps/56437/header_292x136.jpg?t=1328477972
+40	Diablo III.exe	Diablo 3	http://gamingwithscissors.com/wp-content/uploads/2012/05/Diablo-III.png
+41	bf3.exe	Battlefield 3	http://swigon.radom.pl/grafika/bf.png
+42	arma2oa.exe	DayZ	http://gikz.pl/wp-content/uploads/2012/06/Dayz.jpg
+43	spelunky.exe	Spelunky	http://www.gry-online.pl/galeria/gry13/-1443627546.jpg
+44	Future Soldier DX11.exe	Ghost Recon Future Soldier	https://fbcdn-profile-a.akamaihd.net/hprofile-ak-frc1/174703_236368946401370_1224119443_n.jpg
+45	UDK.exe	Chivalry: Medieval Warfare	http://th07.deviantart.net/fs71/200H/f/2012/309/c/9/chivalry_medieval_warfare_icon_by_mykavv-d5k3me5.png
+46	eurotrucks2.exe	Euro Truck Simulator 2	http://profile.ak.fbcdn.net/hprofile-ak-ash4/188185_491040950918485_748565725_n.jpg
+47	RelicCoH2.exe	Company Of Heroes 2	http://pcgameswallpapers.com/wp-content/uploads/2013/03/Company-of-Heroes-2-Wallpaper-1920x1080-180x180.jpg
+48	CIM2.exe	Cities in Motion 2	http://css.game5ive.com/3032-home_default/cities-in-motion-2-steam-pc-mac-eu.jpg
+49	farcry3.exe	Farcry 3	http://realgamestop.com/img/p/3/5/35-home_default.jpg
+50	MONACO.exe	Monaco	http://th08.deviantart.net/fs70/200H/f/2013/114/8/9/monaco_what_s_yours_is_mine_by_kuhleeting123-d62tgi5.png
+51	FTLGame.exe	Faster Than Light	http://www.toptiertactics.com/wp-content/uploads/2013/01/ftl-faster-than-light-guide-180x180.jpg
+52	payday_win32_release.exe	PAYDAY: The Heist	http://mp3poty.com/artists/big/397/198087.jpg
+53	NFS11.exe	Need For Speed: Hot Pursuit	http://www.appspy.com/images/product_icons/430438/430438_180.jpg
+54	HotlineMiami.exe	Hotline Miami	http://p-in.it/wp-content/uploads/2013/03/Hotline-Miami-Wallpaper-HD-Original-4-180x180.jpg
+55	Game.exe	The Longest Journey	http://userserve-ak.last.fm/serve/300x300/75137640.png
+56	GhostReconOnline.exe	Ghost Recon Online	https://profile-a.xx.fbcdn.net/hprofile-ash4/373467_174987875902205_749164712_n.jpg
+57	RememberMe.exe	Remember Me	http://oyster.ignimgs.com/mediawiki/apis.ign.com/remember-me/thumb/b/b8/Remember-me-thumb.jpg/180px-Remember-me-thumb.jpg
+58	dontstarve_steam.exe	Don't Starve	https://fbcdn-photos-f-a.akamaihd.net/hphotos-ak-prn1/14495_424028211003714_795861192_a.jpg
+59	CoJGunslinger.exe	Call of Juarez : Gunslinger	http://fc01.deviantart.net/fs71/f/2013/145/b/b/call_of_juarez_gunslinger_by_kuhleeting123-d66hx2y.png
+60	AlanWake.exe	Alan Wake	http://fc07.deviantart.net/fs70/f/2013/043/f/c/alan_wake_icon_by_warriotox-d5upcy8.png
+61	TombRaider.exe	Tomb Raider	https://profile-a.xx.fbcdn.net/hprofile-ash4/188162_156755584360182_1861567093_n.jpg
+62	JustCause2.exe	Just Cause 2	https://photos-a.xx.fbcdn.net/hphotos-ash3/598889_422406287839500_1558707180_a.png
+99	notepad.exe	Windows standard notepad	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS9QbQXDXI1xVUmA_4gUkSAtpCmkceJYC89PFlw33qy8JjNnbs1Q
+!100	calc.exe	Windows standard calculator 

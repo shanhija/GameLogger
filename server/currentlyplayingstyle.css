@@ -1,0 +1,77 @@
+	<style type="text/css">
+	
+		/* .gl-* classes are gamelogger specific */
+	
+		/* Defines general color and flag box border */
+		.gl-apm-histogram .sami {		
+			/* Color used for sami throughout histogram */
+			color: 	#8de820;
+			/* Border definition for flag */
+			border: solid 1.5pt #8de820;			
+		}
+		.gl-apm-histogram .mikko {
+			color: 	#ff96c7;
+			border: solid 1.5pt #ff96c7;			
+		}
+		.gl-apm-histogram .juha {
+			color: 	#ff5e00;
+			border: solid 1.5pt #ff5e00;			
+		}
+		.gl-apm-histogram .pavel {
+			color: 	#ffcf23;
+			border: solid 1.5pt #ffcf23;			
+		}
+		/* Defaults for the histogram */
+		.gl-apm-histogram {
+			padding: 0;
+			margin: 0;
+			/* Border thickness is used:
+				- line width for histogram background border and tick lines
+				- line width for user "flag pole" and apm circle
+			   Note: Border is removed from the container before it is shown
+			 */
+			border: solid 1.5pt white;						
+			width: 400px;
+			height: 200px;
+			/* Font definitions automatically propagate to all text */
+			font-size: 12px;
+		}		
+
+		.gl-apm-histogram canvas {
+			/* Color for the histogram border and tick lines */
+			color: #bfbfbf;
+			/* Background color for the histogram */
+			background-color: #125234;
+			/* Line width is used as thickness for the histogram lines 
+			   Note: Border is removed from the canvases before shown
+			 */
+			border: solid 2.5pt #bfbfbf;
+		}
+		
+		.gl-apm-histogram .player {
+			/* Definitions for the player flag divs */
+			background-color: white;
+			margin-top: 1px;
+			margin-bottom: 1px;
+			padding: 1px 3px 1px 3px;
+		}
+		
+		.gl-apm-histogram .label {
+			/* Custom rules for x and y labels */
+		}
+		
+		.gl-apm-histogram .tick {
+			/* Custom rules for tick texts */
+		}
+		
+		/* user classes */
+		.gamedetail {
+			clear: both;
+		}
+		.gamedetail div {
+			display: inline-block;
+			float: left;			
+			padding: 3px;
+		}
+				
+	</style>

@@ -1,0 +1,1031 @@
+/* MASSAKUURI.CSS */
+
+/*
+pinkki #ff96c7
+oranssi #ff5e00
+keltainen #ffcf23
+myrkky #8de820
+vihreä #125234
+
+font-family: 'Lato', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'Signika', sans-serif;
+font-family: 'Cookie', cursive;
+font-family: 'Titillium Web', sans-serif;
+
+
+
+*/
+
+
+html, body {
+	min-height: 100%;
+	height: 100%;
+
+}
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video, fieldset {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background: transparent;
+	font-weight: 400;
+	color: #444;
+}
+
+h1 {
+	color: #fff;
+	line-height: 1.6em;
+	font-family: 'Lobster', cursive;
+	font-weight: 400;
+}
+
+h2, h3, .ingres p a {
+	font-family: 'Signika', sans-serif;
+	font-weight: 600;
+}
+h4 {
+	font-size: 4em;
+	font-weight: 400;
+	font-family: 'Cookie', cursive;
+}
+
+p, span, blockquote, fieldset, ul, li, #nowPlayingBox {
+	font-size: 0.9em;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	line-height: 1.5em;
+	list-style-type: none;
+	list-style-position: outside;
+	text-decoration: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	margin: 0;
+	padding: 0;
+}
+
+							/* SPECIAL COLORS */
+.uppercase {
+	text-transform: uppercase;
+}
+
+.center {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.yellow {
+	background: #ffcf23;
+}
+
+.orange {
+	background: #ff5e00;
+}
+
+.pink {
+	background: #ff96c7;
+}
+
+.poison {
+	background: #8de820;
+}
+
+.green {
+	background: #125234;
+}
+							/* SPECIAL COLORS */
+a {
+	color: #444;
+	text-decoration: none;
+	border: 0;
+}
+
+a:hover {
+	transition: all 0.2s;
+}
+							/* SITE ELEMENTS */
+#container {
+	margin: 0;
+	padding: 0;
+	background:url('/elements/appelsiinipuu.gif');
+	background-repeat: repeat-x;
+	background-position: right 80%;
+}
+
+#topnav {
+	margin: auto;
+	text-align: center;
+	background-color: #125234;
+	/* background:url('/elements/topnavbg.gif'); */
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+	border-bottom: 10px solid #8de820;
+}
+#topnav a { display: inline-block; }
+
+#topnav a img .logo {
+	padding: 0;
+	margin: 0;
+	margin-top: 0px;
+/*	margin-left: 15px;
+	margin-right: 10px;
+	border: 0;
+	float: left;*/
+}
+
+.logo img {
+	margin-top: 10px;
+}
+#topnav h1 {
+	margin: auto;
+	text-align: center;
+	background-repeat: repeat-x;
+	background-position: 0px 0px;
+	/* background-image: url('/elements/topnavbg.gif'); */
+}
+
+#topnav a h1 {
+	transition: all 1000ms;
+	height: 62px;
+	color: #fff;
+	/*float: left;*/
+	font-size: 2em;
+	margin-left: 0em;
+	padding-left: 0.4em;
+	padding-right: 0.4em;
+}
+
+#topnav a h1:hover {
+	color: #fff;
+	background-color: #8de820;
+	/* background-image:url('/elements/topnav.gif'); */
+	height: 62px;
+	background-position: 0px 0px;
+}
+
+#defaultCountdown {
+	border: 0;
+	width: 170px;
+	background: transparent;
+	font-size: 2em; display: inline-block;/* 	float: left;*/
+}
+
+#content {
+	text-align: center;
+	margin: auto;
+	min-width: 500px;
+	max-width: 960px;
+
+}
+							/* SITE ELEMENTS */
+							/* LAST.FM PLAYLIST */
+#nowPlayingBox {
+	padding: 0.5em;
+	font-size: 1em;
+	color: #fff;
+	background-color: #ff5e00;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+#nowPlayingBox span {
+	color: #fff;
+
+}
+#lastBox, #lastBox ul li {
+	font-size: 0.9em;
+	margin: 0;
+	padding: 0;
+}
+
+#lastBox ul li {
+	margin-left: 10px;
+	display: block;
+	float: left;
+	width: 205px;
+	height: 110px;
+	margin-bottom: 10px;
+}
+
+#lastBox img {
+	float: left;
+	margin-right: 10px;
+	width: 64px;
+	height: 64px;
+}
+								/* LAST.FM PLAYLIST */
+								/* BLOG */
+h3.blog {
+	display: inline-block;
+	line-height: 1em;
+	margin-bottom: 0.2em;
+
+}
+p.blog {
+	padding-bottom: 1em;
+	clear: both;
+	border-bottom: 1px solid #ff5e00;
+	margin-bottom: 1em;
+
+}
+
+br p.blog {
+	border-bottom: 1px dotted black;
+
+}
+.date {
+	font-size: 0.8em;
+	float: right;
+}
+.ingres p a {
+	position: relative;
+	font-weight: 600;
+	margin-top: 0.2em;
+	margin-bottom: 0.8em;
+	line-height: 1em;
+	color: #fff;
+	border-radius: 5px;
+	padding: 0.5em;
+	float: right;
+	background-color: #ff5e00;
+	display: inline-block;
+}
+
+.ingres p a:hover {
+	color: #125234;
+	background-color: #ffcf23;
+
+}
+
+.ingres p {
+	clear: left;
+
+}
+
+.ingres hr {
+	background-color: #ff5e00;
+	width: 100%;
+	border: 0;
+	height: 1px;
+	color: #ff5e00;
+}
+.ingres h3 {
+}
+
+.ingres img {
+	width: 100px;
+	float: right;
+	padding-left: 5px;
+	padding-bottom: 10px;
+}
+							/* BLOG */
+							/* GAMELOGGER */
+.gamedetail {
+	font-family: 'Signika', sans-serif;
+	font-weight: 600;
+	color: #444;
+	clear: both;
+	margin-bottom: 0.5em;
+	height: 80px;
+}
+.activegamesheader {
+	padding: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	clear:both;
+
+}
+
+.activegamesheader h1 {
+	display: inline-block;
+	color: #444;
+	font-size: 1em;
+}
+
+.gamedetail .player {
+	display: inline-block;
+	height: 80px;
+	width: 80px;
+	float: left;
+	text-align: center;
+	margin-right: 5px;
+}
+
+.gamedetail span.player,.apm-game-history span.player  {
+	margin: 0;
+	margin-top: 0.25em;
+	padding: 0;
+	font-family: 'Cookie', cursive;
+	font-weight: 400;
+	color: #fff;
+	font-size: 2.3em;
+	text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
+}
+
+.apm-game-history span.player  {
+	margin-top: 0em;
+	line-height: 2.5em;
+}
+
+.apm-game-history {
+	float: left;
+	width: 100px;
+
+
+}
+.apm-game-history .player {
+	height: 100px;
+	display: block;
+	text-align: center;
+	margin: 0;
+}
+
+.gl-game-logo-bg {
+	width: 180px;
+	height: 80px;
+	text-align: center;
+	float: left;
+}
+
+.gl-game-name {
+	margin-top: 0.4em;
+	text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
+	display: block;
+
+}
+.gl-game-name span {
+	color: #fff;
+	text-align: center;
+	font-family: 'Signika', sans-serif;
+	font-weight: 600;
+	display: block;
+}
+
+.gl-apm-total, .gl-game-played {
+	width: 80px;
+	display: inline-block;
+}
+
+.gl-apm-total span, .gl-game-played span {
+	margin-top: 0em;
+	padding-top: 1em;
+	font-size: 1.2em;
+	color: #444;
+	font-family: 'Signika', sans-serif;
+	font-weight: 600;
+	text-align: center;
+}
+/* .gl-* classes are gamelogger specific */
+
+/* Defines general color and flag box border */
+.gl-apm-histogram {
+	margin-top: 2em;
+	padding-top: 2em;
+	font-family: 'Signika', sans-serif;
+	font-weight: 600;
+}
+
+.gl-apm-histogram .sami, .gl-apm-histogram .mikko, .gl-apm-histogram .juha, .gl-apm-histogram .pavel {
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+
+}
+.gl-apm-histogram .sami {		
+	/* Color used for sami throughout histogram */
+	color: 	#8de820;
+	/* Border definition for flag */
+	border: solid 1.5pt #8de820;
+	margin-left: -1px;
+}
+.gl-apm-histogram .mikko {
+	position: relative;
+	color: 	#ff96c7;
+	border: solid 1.5pt #ff96c7;
+	margin-left: -1px;
+}
+.gl-apm-histogram .juha {
+	color: #ff5e00;
+	border: solid 1.5pt #ff5e00;
+	margin-left: -1px;
+}
+.gl-apm-histogram .pavel {
+	color: 	#ffcf23;
+	border: solid 1.5pt #ffcf23;		
+	margin-left: -1px;
+}
+/* Defaults for the histogram */
+.gl-apm-histogram {
+	padding: 0;
+	margin: 0;
+	/* Border thickness is used:
+		- line width for histogram background border and tick lines
+		- line width for user "flag pole" and apm circle
+	   Note: Border is removed from the container before it is shown
+	 */
+	border: solid 1.5pt white;						
+	width: 400px;
+	height: 200px;
+	/* Font definitions automatically propagate to all text */
+	font-size: 0.8em;
+}		
+
+.gl-apm-histogram canvas {
+	/* Color for the histogram border and tick lines */
+	color: #bfbfbf;
+	/* Background color for the histogram */
+	background-color: #125234;
+	/* Line width is used as thickness for the histogram lines 
+	   Note: Border is removed from the canvases before shown
+	 */
+	border: solid 2px #8de820;
+}
+
+.gl-apm-histogram .player {
+	/* Definitions for the player flag divs */
+	padding: 0.2em;
+}
+
+.gl-apm-histogram .label {
+	/* Custom rules for x and y labels */
+}
+
+.gl-apm-histogram .tick {
+	/* Custom rules for tick texts */
+}
+							/* GAMELOGGER SUBPAGE */
+
+							/* GAME HISTORY */
+							.gl-history-loading {
+								
+							}
+							.gl-history-loading img {
+								margin-top: 1em;
+								float: left;
+								display: inline-block;
+							}
+							.gl-history-loading h1 {
+								display: inline-block;
+								border-radius: 5px;
+								display: block;
+								margin-top: 1em;
+								margin-left: 1em;
+								margin-right: 1em;
+								padding: 0.5em;
+								background-color: #ff5e00;
+								font-size: 2em;
+								line-height: 1em;
+								text-align: center;
+								color: #fff;
+							}
+							.gl-history-loaded h1 {
+								color: #fff;
+								visibility: hidden;
+								margin: 0;
+								padding: 0;
+							}
+							.gl-history-loaded {
+								visibility: hidden;
+								margin: 0;
+								padding: 0;
+							}
+
+							.gl-wrapper {
+								font-family: 'Signika', sans-serif;
+								font-weight: 600;
+								width: 20%;
+								min-width: 230px;
+								margin-bottom: 1em;
+								float: left;
+							}
+							.gl-wrapper .game {
+								margin-right: 1em;
+								margin-bottom: 1em;
+							}
+							.gl-wrapper .game-name {
+								width: 100%;
+								border-top-left-radius: 5px;
+								border-top-right-radius: 5px;
+								background-color: #125234;
+							}
+							.gl-wrapper .game-name span {
+								display: inline-block;
+								color: #fff;
+								padding: 0.3em;
+								font-weight: 600;
+							}
+							.gl-wrapper .game-pic {
+								float: left;
+								width: 80%;
+								height: 80px;
+							}
+							.gl-wrapper .game-pic img {
+								width: 100%;
+								height: 80px;
+							}
+							.gl-wrapper .game-played {
+								float: left;
+								display: block;
+								color: #fff;
+								line-height: 2.5em;
+								text-align: center;
+								background-color: #444;
+								width: 20%;
+								height: 40px;
+							}
+							.gl-wrapper .game-walltime {
+								float: left;
+								display: block;
+								color: #fff;
+								line-height: 2.5em;
+								text-align: center;
+								background-color: #125234;
+								width: 1;
+								height: 40px;
+							}
+							.gl-wrapper .game-width-played span, .gl-wrapper .game-width-walltime span {
+								padding: 0.3em;
+								color: #fff;
+								text-align: right;
+							}
+							.gl-wrapper .game-width-played {
+								width: 100%;
+								float: left;
+								display: block;
+								background-color: #444;
+								height: 40px;
+							}
+							.gl-wrapper .game-width-walltime {
+								float: left;
+								display: block;
+								background-color: #ff5e00;
+								height: 40px;
+							}
+							.gl-wrapper .game-bg {
+								visibility: hidden;
+							}
+							.gl-wrapper .game-bg-color {
+								width: 20%;
+								height: 80px;
+								float: left;
+							}
+							.gl-wrapper .game-color {
+								visibility: hidden;
+							}
+
+							/* GAME HISTORY */
+
+							.gl-history-timeline {
+								font-family: 'Signika', sans-serif;
+								font-weight: 600;
+								margin: 0;
+								padding: 0;
+								height: 450px;
+								display: block;					
+							}
+							.gl-history-timeline div {
+								height: 50px;
+							}
+							
+							.gl-history-timeline-apm {
+								border: 1px solid #8de820;
+								background-color: #125234;
+							}
+							
+							.gl-history-timeline-ticks {
+							}
+							.gl-history-timeline-ticks div {
+								text-align: center;
+								
+							}				
+							.gl-history-timeline-game {
+							}
+							.gl-history-timeline-game div {
+								height: 50px;
+							}							
+							.gl-history-timeline-tooltip {
+								display: none;
+								font-family: 'Signika', sans-serif;					
+								background-color: #fff;
+								border-radius: 5px;
+								padding: 1em;
+								padding-top: 0.5em;
+								border: 1px solid #8de820;
+								width: 250px;
+							}
+							.gl-history-timeline-tooltip:hover {
+								position: absolute;
+								display: block;
+								overflow: hidden;
+								z-index: 10000;
+							}
+							.gl-history-timeline-tooltip .gl-game-name {
+								text-shadow: none;
+							}
+							.gl-history-timeline-tooltip span {
+								display: inline-block;
+							}
+							.gl-history-timeline-tooltip .gl-game-name, 
+							.gl-history-timeline-tooltip .gl-game-played, 
+							.gl-history-timeline-tooltip .gl-apm-total,
+							.gl-history-timeline-tooltip .gl-apm-avg,
+							.gl-history-timeline-tooltip .gl-history-timeline-time,
+							.gl-history-timeline-tooltip .gl-game-logo {
+								display: inline-block;
+							}
+							.gl-history-timeline-tooltip .gl-game-name {
+								display: block;
+							}
+							.gl-history-timeline-tooltip .gl-game-name {
+								text-align: center;
+								weight: 900;
+								font-size: 1em;
+								line-height: 0.7em;
+								margin-bottom: 0.5em;
+							 }
+							.gl-history-timeline-tooltip .gl-game-logo {
+								height: 100px;
+								text-align: center;
+								border-radius: 5px;
+								margin-top: 0.5em;
+								display: block;
+							}
+							.gl-history-timeline-tooltip .gl-game-logo img {
+								border-radius: 5px;
+							}
+							/* GAMELOGGER SUBPAGE */
+
+							/*	DAILY COMPETITION STYLING */
+.competition {
+	vertical-align: top;
+}
+
+.introduction {
+	font-style: italic;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 1em;
+	margin-bottom: 10px;
+	line-height: 1.3em;
+}
+
+.question {
+	background-color: #125234;
+	font-weight: 600;
+	font-size: 1.2em;
+	line-height: 1.0em;
+	margin-bottom: 1em;
+	color: #fff;
+	padding: 1em;
+	padding-bottom: 1.5em;
+	border-radius: 5px;
+
+}
+
+.competition h3 {
+	display: block;
+	font-weight: 600;
+	font-size: 1.1em;
+}
+
+h3.competitionheader  {
+	font-weight: 100;
+	font-size: 2em;
+	line-height: 1.6em;
+}
+
+.competition ul {
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+}
+	
+.competition li {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+.competition li img {
+	width: 100px;
+}
+
+.competition .wide {
+	width: 310px;
+}
+
+.competition .narrow {
+	vertical-align: top;
+	width: 100px;
+}
+
+.competitionrules {
+	font-size: 0.6em;
+}
+
+.winners li {
+	margin-bottom: 0.5em;
+}
+
+.competitionnro {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 0.4em;
+	background: #125234;
+	text-align: center;
+	font-size: 1.2em;
+	color: #ff5e00;
+}
+.winner {
+	font-family: 'Lobster', cursive;
+	font-weight: 600;
+	line-height: 1.6em;
+	background: #ffcf23;
+	text-align: center;
+	font-size: 3em;
+	color: #125234;
+
+}
+.price{
+	font-size: 1em;
+	line-height: 1.4em;
+	background: #ffcf23;
+	text-align: center;
+	margin-bottom: 0.8em;
+	padding-bottom: 1em;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.price p, p.price {
+	padding-left: 2em;
+	padding-right: 2em;
+}
+.price img {
+	display: block;
+	padding-bottom: 0.6em;
+	margin: auto;
+	text-align: center;
+	width: 100px;
+}
+/*	DAILY COMPETITION STYLING *//*	DAILY COMPETITION STYLING *//*	DAILY COMPETITION STYLING *//*	DAILY COMPETITION STYLING *//*	DAILY COMPETITION STYLING *//*	DAILY COMPETITION STYLING */
+
+
+
+ul li.date {
+}
+
+ul li.album {
+}
+
+.photoreel {
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.photoreel img { 
+	width: 133px;
+	height: 133px;
+}
+
+#showmoar img {
+	width: 133px;
+	height: 133px;
+	/* photoreel link image */
+}
+
+#imagewall {
+	margin: 0;
+	padding: 0;
+}
+
+#imagewall a {
+	padding: 0;
+	margin: 1px;
+	float: left;
+	border: 0px dotted #0000ff;
+	display: block;
+	width: 33%;
+	height: 400px;
+/*	width: 340px;
+	height: 175px; */
+}
+
+#camwall a {
+	padding: 0;
+	margin: 1px;
+	float: left;
+	display: block;
+	width: 130px;
+	height: 73px;
+}
+
+#imagewall img, #camwall img {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.window {
+	text-align: left; 
+	background-color: #fff;
+	border: 2px solid #ff5e00;
+	border-radius: 5px;
+	float: left;
+	width: 450px;
+	margin-left: 1em;
+	margin-top: 1em;
+}
+
+.wide {
+	width: 98%;
+}
+.windowtitle {
+	clear: both;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	/*background: url('/elements/wbar.gif');*/
+	background-repeat: repeat-x;
+}
+
+.windowtitle h2 {
+	font-family: 'Lobster', cursive;
+	font-weight: 400;
+	display: block;
+	background: #ff5e00;
+	padding: 0.2em;
+	padding-top: 0em;
+	color: #fff;
+	line-height: 1.2em;
+	font-size: 1.5em;
+}
+
+.windowcontent {
+}
+
+.disclaimer {
+	padding: 0px;
+	font-size: 0.9em;
+	text-align: center;
+	background-color: #000; color: #ff5e00;
+}
+
+.padding {
+	padding: 10px;
+}
+
+.stills {
+
+}
+
+a.stills {
+	margin: auto;
+	text-align: center;
+	display: block;
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-bottom: 5px;
+	width: 100px;
+	height: 60px;
+}
+
+a.stills img {
+	width: 100%;
+}
+
+
+.clear {
+	border: 0;
+	width: 100%;
+	clear: both;
+	color: transparent;
+	background-color: transparent;
+	height: 0px;
+}
+
+
+.lockedheight {
+	height: 360px;
+	margin-bottom:0em;
+}
+.lockedheightnoise {
+	height: 540px;
+	margin-bottom:0em;
+}
+/* GAMELOGGER *//* GAMELOGGER *//* GAMELOGGER *//* GAMELOGGER *//* GAMELOGGER *//* GAMELOGGER *//* GAMELOGGER *//* GAMELOGGER *//* GAMELOGGER *//* GAMELOGGER *//* GAMELOGGER *//* GAMELOGGER *//* GAMELOGGER *//* GAMELOGGER *//* GAMELOGGER */
+
+.flag {
+	color: #fff;
+	border-left: 2px solid;
+	border-top: 2px solid;
+	height: 150px;
+	dislpay: inline;
+	float: left;
+}
+
+.flag .player {
+	dislpay: block;
+	border-right: 2px solid;
+	border-bottom: 2px solid;
+	vertical-align: top;
+	line-height: 1em;
+	font-size: 0.8em;
+	transform: rotate(90deg);
+	-ms-transform: rotate(90deg); /* IE 9 */
+	-webkit-transform: rotate(90deg); /* Safari and Chrome */
+}
+.player1 {
+	padding: 0.2em;
+	border-color: #ff0000;
+}
+.player2 {
+	padding: 0.2em;
+	border-color: #00ff00;
+}
+.player3 {
+	padding: 0.2em;
+	border-color: #0000ff;
+}
+.player4 {
+	padding: 0.2em;
+	border-color: #ffff00;
+}
+
+
+
+
+
+
+/* GAMELOGGER *//* GAMELOGGER *//* GAMELOGGER *//* GAMELOGGER *//* GAMELOGGER *//* GAMELOGGER *//* GAMELOGGER *//* GAMELOGGER *//* GAMELOGGER *//* GAMELOGGER *//* GAMELOGGER */
+
+
+/* FOOOTER *//* FOOOTER *//* FOOOTER *//* FOOOTER *//* FOOOTER *//* FOOOTER *//* FOOOTER *//* FOOOTER *//* FOOOTER *//* FOOOTER *//* FOOOTER *//* FOOOTER *//* FOOOTER *//* FOOOTER *//* FOOOTER */
+
+#footer {
+	margin-top: 4em;
+	border-top: 10px solid #8de820;
+	padding-left: 2em;
+	padding-bottom: 3em;
+	clear: both;
+	background-color: #125234;
+	color: #fff;
+}
+
+#footer p, #footer ul, #footer li {
+	color: #fff;
+}
+
+.footercolumn {
+	padding-left: 3%;
+	padding-top: 1em;
+	width: 29%;
+	min-width: 140px;
+	float: left;
+	display: inline;
+}
+
+.footercolumn h1 {
+	line-height: 1em;
+	margin-bottom: 0.4em;
+	font-size: 3em;
+}
+
+.footercolumn p {
+}
+
+.footercolumn ul {
+
+}
+
+.footercolumn li {
+	margin-bottom: 0.5em;
+}
+
+.footercolumn ul > li > ul > li {
+	margin-bottom: 2em;
+}
+
+/* FOOOTER *//* FOOOTER *//* FOOOTER *//* FOOOTER *//* FOOOTER *//* FOOOTER *//* FOOOTER *//* FOOOTER *//* FOOOTER *//* FOOOTER *//* FOOOTER *//* FOOOTER *//* FOOOTER *//* FOOOTER *//* FOOOTER *//* FOOOTER */

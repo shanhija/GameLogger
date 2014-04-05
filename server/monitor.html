@@ -1,0 +1,70 @@
+<html>
+<head>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript">
+function check() {			
+	$.get('gamelogger/browserConnect.php?request=observeAPM', function(data) {
+		var html = [];
+		var players = JSON.parse(data);
+		var serverTime = players["now"];
+		var failed = "";
+		for (var player in players) {
+			if (player != 'now') {
+				if (serverTime - players[player].updated > 5*60) {
+					html.push("<b>"+player + ": perkele<br></b>");
+					failed = player;
+				} else {
+					html.push(player + ": ok<br>");
+				}
+			}
+		}
+		if (failed.length > 0) {
+			$("#"+failed)[0].play();
+			setTimeout(function() {
+				$("#song")[0].play();
+			},1000);
+			setTimeout(function() {
+				$("#"+failed)[0].play();
+			},5000);
+		}
+		$('#container').html(html.join(""));
+	});
+}
+	
+function resetPlayers() {
+	$.get('gamelogger/browserConnect.php?request=resetAPM', function() {
+		check();
+	});
+}	
+	
+var users;	
+	$(document).ready(function() {
+		setInterval(function() {check();}, 5*60*1000);	
+		check();
+	});
+	
+	</script>
+</head>
+<body>
+<div style="width: 100%; height: 500;" id="container"></div>
+<a href="#" onclick="resetPlayers()">Reset players</a>
+<audio id="song">
+  <source src="elements/fail.mp3" type="audio/mpeg" />
+</audio>
+
+
+<audio id="mikko">
+  <source src="elements/mikko.mp3" type="audio/mpeg" />
+</audio>
+<audio id="sami">
+  <source src="elements/sami.mp3" type="audio/mpeg" />
+</audio>
+<audio id="juha">
+  <source src="elements/juha.mp3" type="audio/mpeg" />
+</audio>
+<audio id="pavel">
+  <source src="elements/pavel.mp3" type="audio/mpeg" />
+</audio>
+
+</body>
+</html>
