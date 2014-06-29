@@ -38,7 +38,7 @@ void NetworkHandler::networkDummyFinished() {
 
 void NetworkHandler::submitRequest(QNetworkRequest req)
 {
-    QDEBUG("[NetworkHandler::submitRequest()] called with URL: %s", qPrintable(req->url().toString()));
+    QDEBUG("[NetworkHandler::submitRequest()] called with URL: %s", qPrintable(req.url().toString()));
     QNetworkReply * rep = qnam.get(req);
     replyList.append(rep);
     connect(rep, SIGNAL(error(QNetworkReply::NetworkError)), this, SLOT(networkError(QNetworkReply::NetworkError)));

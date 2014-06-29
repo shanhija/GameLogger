@@ -9,18 +9,26 @@ GameLogger::GameLogger(QString serverUrl, QString player)
     connect(networkHandler, SIGNAL(error(QString)), this, SLOT(networkError(QString)));
 
     // Transfer handling to timer thread
-    timer = new QTimer(this);
-    timer->setSingleShot(false);
-    timer->setInterval(0);
-    connect(timer, SIGNAL(timeout()), this, SLOT(querySettings()));
-    timer->start();
+    updateTimer = new QTimer(this);
+    updateTimer->setSingleShot(false);
+    updateTimer->setInterval(0);
+    connect(updateTimer, SIGNAL(timeout()), this, SLOT(querySettings()));
+    updateTimer->start();
+
+    frameTimer = new QTimer(this);
+    frameTimer->setSingleShot(false);
+    frameTimer->setInterval(1000/GAMEPAD_CHECK_FPS);
+    connect(frameTimer, SIGNAL(timeout()), this, SLOT(frame()));
 
     updates = 0;
 }
 
 GameLogger::~GameLogger() {
-    timer->stop();
-    delete timer;
+    updateTimer->stop();
+    if (frameTimer->isActive())
+        frameTimer->stop();
+    delete frameTimer;
+    delete updateTimer;
     delete networkHandler;
     delete apmLog;
     delete gameLog;
@@ -29,7 +37,7 @@ GameLogger::~GameLogger() {
 
 void GameLogger::notifyClose()
 {
-    timer->stop();
+    updateTimer->stop();
     networkHandler->reportNoSession(0);
 }
 
@@ -40,10 +48,14 @@ void GameLogger::querySettings() {
     waitedForSettings = 0;
 
     // The first timeout in timer was to get the settings
-    disconnect(timer, SIGNAL(timeout()), this, SLOT(querySettings()));
-    timer->setInterval(1000-QTime::currentTime().msec()); // Baseline 1 second interval/resolution
+    disconnect(updateTimer, SIGNAL(timeout()), this, SLOT(querySettings()));
+    updateTimer->setInterval(1000-QTime::currentTime().msec()); // Baseline 1 second interval/resolution
     metronome.start();
-    connect(timer, SIGNAL(timeout()), this, SLOT(update()));
+    connect(updateTimer, SIGNAL(timeout()), this, SLOT(update()));
+}
+
+void GameLogger::frame() {
+    apmLog->updateGamepad();
 }
 
 void GameLogger::update() {
@@ -62,8 +74,11 @@ void GameLogger::update() {
             gameLog = new GameLog(settings);
             apmLog = new APMLog(settings->apmBufferSize, settings->serverTime);
 
+            // Start frame timer to apm gamepad checker
+            frameTimer->start();
+
             // When program is fired up, stop any previous sessions.
-            networkHandler->reportNoSession(apmLog->current);
+            networkHandler->reportNoSession(apmLog->current);            
 
             // Notify settings changed
             emit settingsReady(settings);
@@ -102,9 +117,9 @@ void GameLogger::update() {
     // Update timer to keep within 1 second period
     int msec = QTime::currentTime().msec();
     if (msec < 500)
-        timer->setInterval(1000-msec);
+        updateTimer->setInterval(1000-msec);
     else
-        timer->setInterval(2000-msec);
+        updateTimer->setInterval(2000-msec);
 }
 
 void GameLogger::networkError(QString errorStr)

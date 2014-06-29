@@ -9,7 +9,7 @@
 #define QDEBUG(fmt,...) ((void)0)
 #endif
 
-#define VERSION QString("3.0.1")
-#define VERSION_CONTEXT QString("Massakuuri 2013")
+#define VERSION QString("3.1")
+#define VERSION_CONTEXT QString("Summerkampf 2014")
 
 #endif // COMMON_H

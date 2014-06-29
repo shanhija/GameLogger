@@ -25,6 +25,7 @@ public:
 public slots:
     void querySettings();
     void update();
+    void frame();
     void networkError(QString error);
 
 signals:
@@ -38,7 +39,8 @@ private:
 
     int waitedForSettings;
 
-    QTimer *timer;
+    QTimer *updateTimer;
+    QTimer *frameTimer;
 
     QTime metronome;
 

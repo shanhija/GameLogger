@@ -5,7 +5,7 @@
 #-------------------------------------------------
 
 QT      += core gui network
-LIBS    += -L'C:/Development/WINDOW~1/8.1/Lib/winv6.3/um/x86' -lpsapi -luser32
+LIBS    += -L'C:/Development/WINDOW~1/8.1/Lib/winv6.3/um/8x86/' -lpsapi -luser32 -lXinput
 INCLUDEPATH += C:/Development/WINDOW~1/8.1/Include/um
 INCLUDEPATH += C:/Development/WINDOW~1/8.1/Include/shared
 
@@ -15,6 +15,7 @@ TARGET = GameLogger
 TEMPLATE = app
 
 debug {
+
 #    DEFINES += MY_DEBUG
 }
 
